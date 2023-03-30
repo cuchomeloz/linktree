@@ -1,0 +1,81 @@
+:root {
+    /* COLORS */
+    --color-fondo: #ebeef1;
+    --color-primario: #cfd8dc;
+    --color-secundario: #b0bec5;
+    --color-terciario: #90a4ae;
+    --color-cuaternario: #78909c;
+    --color-blanco: #ffff;
+    --color-negro: #0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-fondo);
+    /* height: 100vh; */
+}
+
+h1 {
+    color: var(--color-primario);
+}
+
+p {
+    color: var(--color-secundario);
+}
+
+a {
+    color: var(--color-terciario);
+}
+
+button {
+    background-color: var(--color-cuaternario);
+    color: var(--color-blanco);
+}
+
+.contentHeader {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0;
+}
+
+.contentItems {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    width: 70rem;
+    background-color: var(--color-blanco);
+    border-radius: 1rem;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.items>img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.items:hover {
+    width: 71rem;
+}
